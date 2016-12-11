@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>致莉莉的真情告白</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<h1 class="comments">*******致莉莉的真情告白*******</h1>
+			<h3>
+<p>
+<span style="padding-right:29px;"></span> 莉莉，给你写这封信，我心里既是高兴，又是激动，高兴的是我能够在茫茫人海中遇到这么
+好的你，能够和你牵手相伴，这也许就是缘分吧；激动的是这是我第一次给女生写信，呵呵，算
+是给你的一封情书吧^o^......，因为我是学计算机专业的，也不知道浪漫，所以以这种现代化的方式
+给你表达爱，你不会介意吧，因为这样可以表达我内心的真实感受和想法。
+</p>
+<p>    
+<span style="padding-right:29px;"></span>莉莉，转眼间我们从相识、相知、到相爱也有一百多天了吧，我相信我们彼此之间也有了一个
+一定程度的认识和了解了，在和你聊天中，我也发现我们存在许多的共同点和默契度，这仿佛我们
+上辈子我们就是一家人一样。你说过你们家人好多也是程序员，从你爸（虽然以前是）、你姐夫、
+你表弟和你身边的朋友 ，你从中也会发现程序员的许多优点（可爱、有责任心、上进心、细心、耐
+心等），哈哈，以后我们成为一个程序员世家也不是没有可能的。感谢上天让我遇到这么好的你，所以
+我一定要好好去珍惜你，去爱护你，去一辈子对你好。我说过，你是我的幸运星，我是你的开心果，
+自从我认识了你，我运气和状态也变得比以前好了，所以我也希望在今后生活中做你一辈子的开心果，
+让你幸福快乐！
+</p>
+<p>
+<span style="padding-right:29px;"></span>莉莉，你是我心中最优秀的女孩，我既然认定了你，今生我只会爱你一个人，希望我们以后一起
+创造美好的生活未来，在这里我只想对你说三个字：我爱你！我知道光说没用，行动是检验爱情的唯
+一标准，后面就看我的行动和表现吧^o^...
+</p>
+<p>	
+<span style="padding-right:29px;"></span>Best Promise！！！
+</p>
+</h3>
+<h3 style="text-align: right;padding-right:30px;"><u style="color:red;font-weight: bold;">--- 爱的宣讲人：赵勇</u></h3>
+			
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					亲爱的，这是我们相爱在一起的时光。
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					爱你一生一世。<br/>
+					<div class="signature">--- 赵勇 && 李梦莉</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<embed src="./music/Cool-Girl.mp3" hidden="true" autostart="true" loop="true">
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2016, 7, 3);
+together.setHours(13);
+together.setMinutes(46);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+<div style="text-align:center;clear:both"></div>
+</body>
+</html>
